@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// Icons
+@import '~open-iconic/font/css/open-iconic.css';
+@import '~open-iconic/font/css/open-iconic-bootstrap.css';
+
+
+
+body {
+    background-color: $body-bg;
+    min-height: 75rem;
+    padding-top: 3.5rem;
+}
+
+.jumbotron{
+    background-color: $body-bg;
+    margin-bottom: 0;
+}
+
+.btn-design{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+}

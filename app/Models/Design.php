@@ -14,7 +14,7 @@ class Design extends Model
     const STATUS_INACTIVE = 0;
     const STATUS_DELETED = -1;
 
-    const PUBLIC_PATH = 'public/storage/designs';
+    const PUBLIC_PATH = 'storage/designs';
     const STORAGE_PATH = 'public/designs';
 
     protected $fillable = [

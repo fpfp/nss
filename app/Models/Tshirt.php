@@ -16,7 +16,7 @@ class Tshirt extends Model
 
     const DEFAULT_IMAGE = 'default_tshirt.png';
 
-    const PUBLIC_PATH = 'public/storage/tshirts';
+    const PUBLIC_PATH = 'storage/tshirts';
     const STORAGE_PATH = 'public/tshirts';
 
 
