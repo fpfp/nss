@@ -27,3 +27,11 @@ Route::group([], function(){
     Route::put('/tshirts/{tshirt}', [TshirtController::class, 'update']);
     Route::delete('/tshirts/{tshirt}', [TshirtController::class, 'destroy']);
 });
+
+Route::group([], function(){
+    Route::get('/designs', [DesignController::class, 'index']);
+    Route::get('/designs/{design}', [DesignController::class, 'show']);
+    Route::post('/designs', [DesignController::class, 'store']);
+    Route::put('/designs/{design}', [DesignController::class, 'update']);
+    Route::delete('/designs/{design}', [DesignController::class, 'destroy']);
+});

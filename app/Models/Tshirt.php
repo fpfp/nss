@@ -50,5 +50,8 @@ class Tshirt extends Model
         }
     }
 
-
+    protected function designs()
+    {
+        return $this->hasMany(Design::class);
+    }
 }
