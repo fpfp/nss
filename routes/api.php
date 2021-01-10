@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TshirtController;
 use App\Http\Controllers\DesignController;
+use App\Http\Controllers\GraphicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,4 +35,9 @@ Route::group([], function(){
     Route::post('/designs', [DesignController::class, 'store']);
     Route::put('/designs/{design}', [DesignController::class, 'update']);
     Route::delete('/designs/{design}', [DesignController::class, 'destroy']);
+});
+
+
+Route::group([], function(){
+    Route::get('/graphics', [GraphicController::class, 'index']);
 });

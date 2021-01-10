@@ -12371,3 +12371,48 @@ body {
   font-size: 0.8rem;
 }
 
+.editor #name {
+  font-size: 3rem;
+}
+
+.editor .canvas-container {
+  width: 600px;
+  height: 600px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.editor .canvas-container canvas {
+  width: 600px;
+  height: 600px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+
+.editor .sidebar #title {
+  font-size: 3rem;
+}
+
+.editor .sidebar .graphic {
+  border: 1px solid #eeeeee;
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 0 5px 5px 0;
+}
+
+.editor .sidebar .graphic a {
+  display: block;
+}
+
+.editor .sidebar .graphic:hover {
+  background-color: #eeeeee;
+  border: 1px solid #6cb2eb;
+}
+

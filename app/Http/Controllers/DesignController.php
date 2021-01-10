@@ -122,7 +122,7 @@ class DesignController extends Controller
             'name' => ['required', 'min:6', 'max:100'],
             'b64img' => ['required', new B64image],
             'status' => ['required', 'numeric', 'between:0,1'],
-            'tshirt_id' => ['required', 'integer']
+            'tshirt_id' => ['required', 'integer'],
         ];
     }
 
@@ -169,4 +169,7 @@ class DesignController extends Controller
         Storage::deleteDirectory(Design::STORAGE_PATH . '/' . $hash);
 
     }
+
+
+
 }

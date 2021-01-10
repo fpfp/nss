@@ -14,17 +14,71 @@
 
 body {
     background-color: $body-bg;
-    min-height: 75rem;
-    padding-top: 3.5rem;
+    min-height      : 75rem;
+    padding-top     : 3.5rem;
 }
 
-.jumbotron{
+.jumbotron {
     background-color: $body-bg;
-    margin-bottom: 0;
+    margin-bottom   : 0;
 }
 
-.btn-design{
+.btn-design {
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.8rem;
+    font-weight   : 700;
+    font-size     : 0.8rem;
+}
+
+
+.editor {
+
+    #name{
+        font-size: 3rem;
+    }
+
+    .canvas-container {
+        width      : $canvas-width;
+        height     : $canvas-height;
+        user-select: none;
+
+        canvas {
+            width      : $canvas-width;
+            height     : $canvas-height;
+            user-select: none;
+            cursor     : default;
+        }
+    }
+
+
+
+
+
+
+    .sidebar {
+
+        #title {
+            font-size: 3rem;
+        }
+
+        .graphic {
+            border : 1px solid $light-grey;
+            display: block;
+            float  : left;
+            width  : 80px;
+            height : 80px;
+            margin : 0 5px 5px 0;
+
+            a {
+                display: block;
+            }
+
+            &:hover {
+                background-color: $light-grey;
+                border          : 1px solid $cyan;
+            }
+        }
+
+
+    }
+
 }
