@@ -26,6 +26,11 @@ Copy the example env file and make the required configuration changes in the .en
 
     cp .env.example .env
 
+    - set DB_* with your database info
+    - set APP_URL your website url
+    - set WATERMARK_IMAGE with path to your watermark png
+    - set GRAPHICS_PATH with path to your svg graphics to use inside editor
+
 Generate a new application key
 
     php artisan key:generate
@@ -33,6 +38,10 @@ Generate a new application key
 Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate
+
+Link storage folder to public
+
+    php artisan storage:link    
 
 Start the local development server
 
