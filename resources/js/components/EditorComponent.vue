@@ -161,7 +161,7 @@ export default {
     },
     loadGraphics() {
       axios
-        .get("/api/graphics/")
+        .get("/api/graphics")
         .then((response) => {
           //console.log(response);
           if (response.data) {
@@ -265,7 +265,7 @@ export default {
     saveDesign() {
       if (this.validateForm()) {
         axios
-          .post("/api/designs/" + (this.designId ?? ""), {
+          .post("/api/designs" + (this.designId ? "/" + this.designId : ""), {
             name: this.name,
             b64img: this.generateImageFromCanvas(),
             _method: this.designId ? "PUT" : "POST",

@@ -2066,7 +2066,7 @@ __webpack_require__.r(__webpack_exports__);
     loadGraphics: function loadGraphics() {
       var _this3 = this;
 
-      axios.get("/api/graphics/").then(function (response) {
+      axios.get("/api/graphics").then(function (response) {
         //console.log(response);
         if (response.data) {
           _this3.graphics = response.data;
@@ -2175,9 +2175,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this6 = this;
 
       if (this.validateForm()) {
-        var _this$designId;
-
-        axios.post("/api/designs/" + ((_this$designId = this.designId) !== null && _this$designId !== void 0 ? _this$designId : ""), {
+        axios.post("/api/designs" + (this.designId ? "/" + this.designId : ""), {
           name: this.name,
           b64img: this.generateImageFromCanvas(),
           _method: this.designId ? "PUT" : "POST",
